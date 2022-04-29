@@ -1,0 +1,171 @@
+/* Estilos generales */
+body {
+	background-color: rgb(22, 187, 159);
+}
+header {
+	height: 50px;
+	margin-bottom: 10px;
+}
+.linea_blanca {
+	border-left: 3px solid white;
+	padding-left: 10px;
+}
+
+/* Página inicio */
+#nombre {
+	float:left;
+}
+#curso {
+	float: right;
+}
+header, .body {
+	background-color: rgb(167, 218, 206);
+	padding: 5px 15px 15px 15px;
+	margin-bottom: 10px;
+}
+#body {
+	height: 300px;
+}
+h1 {
+	padding: 10px;
+	border-bottom: 5px solid rgb(22, 187, 159);
+	text-align: center;
+	margin-bottom: 30px;
+}
+#div_titulo_juego {
+	display: flex;
+	padding-top: 15px;
+}
+#div_titulo_juego > img {
+	height: 300px;
+	margin: 0 auto;
+}
+a {
+	color: black;
+	text-decoration: none;
+	height: 200px;
+}
+#enlace_generar_carta, #enlace_ver_cartas {
+	background-color: white;
+	padding: 2px 10px;
+	margin-bottom: 10px;
+	border-bottom: 5px solid white;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width: 120px;
+	transition: width 2s;
+}
+#enlace_generar_carta p, #enlace_ver_cartas p {
+	padding: 15px 0px;
+	margin: 0px;
+}
+#enlaces div:hover {
+	border-bottom: 5px solid white;
+	background-color: rgb(53, 110, 96);
+	width: 97%;
+}
+#enlaces div:hover a {
+	color: white;
+}
+div#div_datos_enviados {
+	padding: 20px;
+	margin: 10px auto;
+	border: 3px solid black;
+	color: white;
+	background-color: green;
+}
+
+/* Pagina "Crear personaje" */
+
+table {
+	margin: 0 auto;
+	border-collapse: collapse;
+	width:400px;
+	border: 3px solid white;
+}
+caption {
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+th, caption, td {
+	padding: 10px;
+}
+
+th:first-child {
+	background-color: white;
+}
+td, th {
+	border: 3px solid black;
+}
+table img {
+	height: 200px;
+}
+#nom_carta:focus {
+	border: none;
+}
+#form_enviar_datos {
+	text-align: center;	
+}
+#btn_enviar_datos {
+	width: 170px;
+	height: 30px;
+	margin-top: 9px;
+	border: 3px solid black;
+}
+#btn_enviar_datos:hover:not([disabled]){
+	color: white;
+	background-color: black;
+	border-color: white;
+}
+
+/* Ver cartas */
+nav {
+	height: 30px;
+}
+nav ul {
+	padding: 0px;
+}
+.breadcrumb li {
+	list-style: none;
+	float: left;
+	padding-right: 10px;
+}
+#cartas {
+	text-align: center;
+}
+div.carta {
+	background-color: black;
+	color: white;
+	display: inline-block; 
+	margin-bottom: 15px;
+	text-align: left;
+}
+.body_carta {
+	background-color: rgb(53, 110, 96);
+	padding: 15px;
+	margin: 10px;
+}
+.vw_nombre_carta {
+	border-bottom: 3px solid white;
+	text-align: center;
+	margin-top: 0px;
+	padding-bottom: 10px;
+	padding-top: 15px;
+}
+.vw_nombre_carta + img {
+	display: block;
+	margin: auto;
+}
+.vw_img {
+	width: auto;
+	background-color: white;
+	text-align: center;
+}
+#paginacion {
+	display:flex;
+	text-align: center;
+	padding-top: 9px;
+}
+#paginacion * {
+	align-items: center;
+}
