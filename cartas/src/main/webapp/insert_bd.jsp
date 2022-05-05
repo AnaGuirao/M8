@@ -19,7 +19,6 @@
 	Statement statement = null;
 	ResultSet rs = null;	
 	
-	// recollim valors formulari:
 	String nom=request.getParameter("ih_nombre");
 	String race=request.getParameter("ih_raza");
 	String picture=request.getParameter("ih_img");
@@ -47,8 +46,8 @@ try{
 		statement = conn.createStatement();
 		//inmediatamente hacemos un insert amb les dades
 		//creamos la consulta
-int i=statement.executeUpdate("insert into Carta(NOM_carta,PIC_carta,RACE_carta,FUE_carta,DES_carta,CON_carta,INT_carta,SAB_carta,CAR_carta,PV_carta,PM_carta)values('"+nom+"','"+picture+"','"+race+"',"+nfue+","+ndes+","+ncon+","+nint+","+sab+","+car+","+pv+","+pm+")");
-out.println("Data is successfully inserted!");
+int i=statement.executeUpdate("insert into Carta(NOM_carta,usuario,PIC_carta,RACE_carta,FUE_carta,DES_carta,CON_carta,INT_carta,SAB_carta,CAR_carta,PV_carta,PM_carta)values('"+nom+"','"+session.getAttribute("usuario")+"','"+picture+"','"+race+"',"+nfue+","+ndes+","+ncon+","+nint+","+sab+","+car+","+pv+","+pm+")");
+out.println("Se ha creado la carta correctamente");
 }catch(SQLException error) {
 out.print("Error de Conexión : "+error.toString());
 } %>

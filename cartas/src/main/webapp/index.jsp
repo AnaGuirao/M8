@@ -9,10 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	</head>
 	<body>
-		<header>
-			<p id="nombre">Ana Guirao López</p>
-			<p id="curso">DAW 2</p>
-		</header>
+
 		<div class="body" id="div_titulo_juego">
 			<img src="img/logo.png"/>
 		</div>
@@ -30,6 +27,16 @@
 		<% if(request.getParameter("btn_enviar_datos") != null) { %>
 			<div id="div_datos_enviados">
 				<%@include file="insert_bd.jsp"%>
+			</div>
+		<% }
+		else if(request.getParameter("registro_enviar") != null && request.getParameterValues("captcha_humano") != null && request.getParameterValues("captcha_robot") == null) {%>
+			<div id="div_datos_enviados">
+				<%@include file="registro_bd.jsp"%>
+			</div>
+		<% }
+		else if(request.getParameter("registro_enviar") != null && request.getParameterValues("captcha_humano") == null) {%>
+			<div id="div_datos_no_enviados">
+				<p>No has seleccionado que eres un humano</p>
 			</div>
 		<% }; %>
 	</body>

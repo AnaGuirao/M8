@@ -15,8 +15,12 @@ header {
 #nombre {
 	float:left;
 }
-#curso {
+#login, #registro, #usuario_conectado {
 	float: right;
+	height: auto;
+}
+#login {
+	margin-right: 10px;
 }
 header, .body {
 	background-color: rgb(167, 218, 206);
@@ -75,6 +79,14 @@ div#div_datos_enviados {
 	background-color: green;
 }
 
+div#div_datos_no_enviados {
+	padding: 20px;
+	margin: 10px auto;
+	border: 3px solid black;
+	color: white;
+	background-color: red;
+}
+
 /* Pagina "Crear personaje" */
 
 table {
@@ -116,6 +128,11 @@ table img {
 	color: white;
 	background-color: black;
 	border-color: white;
+}
+#captcha_robot {
+	margin-left: 15px;
+	margin-top: 15px;
+	margin-bottom: 10px;
 }
 
 /* Ver cartas */
@@ -168,4 +185,8 @@ div.carta {
 }
 #paginacion * {
 	align-items: center;
+}
+
+#div_datos_no_enviados {
+	
 }
