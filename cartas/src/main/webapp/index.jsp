@@ -11,7 +11,7 @@
 	<body>
 		<header>
 			<p id="nombre">Ana Guirao López</p>
-			<a id="registro" href="registro.jsp"><p>Register</p></a>
+			<a id="registro" href="registro.jsp"><p>Registro</p></a>
 		</header>
 		<div class="body" id="div_titulo_juego">
 			<img src="img/logo.png"/>
